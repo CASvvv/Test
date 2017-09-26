@@ -8,12 +8,13 @@ public class potato : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		move = 0.5f;
+		move = 10.0f;
+		GetComponent<Rigidbody2D>().velocity = transform.up.normalized * move;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		this.transform.position += new Vector3 (-1 * move * Time.deltaTime, 0, 0);
+		// this.transform.position += new Vector3 (0, move * Time.deltaTime, 0);
 	}
 
 	void OnMouseDrag() {

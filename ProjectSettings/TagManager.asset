@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: potato
+    uniqueID: 2698018001
+    locked: 0
+  - name: cannon
+    uniqueID: 446528883
+    locked: 0
