@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class potato : MonoBehaviour {
 
+	private float move;
+
 	// Use this for initialization
 	void Start () {
-		
+		move = 0.5f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		this.transform.position += new Vector3 (-1 * move * Time.deltaTime, 0, 0);
 	}
 
 	void OnMouseDrag() {
@@ -19,11 +21,4 @@ public class potato : MonoBehaviour {
 		mousePos.z = 1.0f;
 		this.transform.position = Camera.main.ScreenToWorldPoint(mousePos);
 	}
-
-	// commit test
-
-
-
-
-	// uooooooo
 }
